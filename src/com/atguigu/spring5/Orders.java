@@ -8,9 +8,8 @@ public class Orders {
         this.oname = oname;
         this.address = address;
     }
+
     public void ordersTest(){
-        System.out.println(oname);
-        System.out.println(" ");
-        System.out.println(address);
+        System.out.println(oname + "=" + address);
     }
 }

@@ -10,14 +10,13 @@
 <!--        <property name="bauthor" value="lcy"></property>-->
 <!--    </bean>-->
 
-<!--    <bean id="orders" class="com.atguigu.spring5.Orders">-->
+    <bean id="orders" class="com.atguigu.spring5.Orders">
 <!--        <constructor-arg name="oname" value="chn"></constructor-arg>-->
 <!--        <constructor-arg name="address" value="fj"></constructor-arg>-->
-<!--        <constructor-arg index="0" value="chn"></constructor-arg>-->
-<!--        <constructor-arg index="1" value="fj2"></constructor-arg>-->
-<!--    </bean>-->
+        <constructor-arg index="0" value="chn"></constructor-arg>
+        <constructor-arg index="1" value="fj2"></constructor-arg>
+    </bean>
 
 
-        <bean id="book" class="com.atguigu.spring5.Book" p:bname="Java" p:bauthor="lcy">
-        </bean>
+<!--        <bean id="book" class="com.atguigu.spring5.Book" p:bname="Java" p:bauthor="lcy"></bean>-->
 </beans>
