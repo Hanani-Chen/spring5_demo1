@@ -3,6 +3,7 @@ package com.atguigu.spring5.testdemo;
 import com.atguigu.spring5.Book;
 import com.atguigu.spring5.Orders;
 import com.atguigu.spring5.User;
+import com.atguigu.spring5.service.UserService;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,7 +23,7 @@ public class TestSpring5 {
     }
 
     @Test
-    public void testBook1(){
+    public void testBook(){
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("bean1.xml");
         Book book = classPathXmlApplicationContext.getBean("book", Book.class);
         System.out.println(book);
@@ -35,5 +36,12 @@ public class TestSpring5 {
         Orders orders = classPathXmlApplicationContext.getBean("orders", Orders.class);
         System.out.println(orders);
         orders.ordersTest();
+    }
+
+    @Test
+    public void testUserService(){
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("bean5.xml");
+        UserService userService = classPathXmlApplicationContext.getBean("userService",UserService.class);
+        userService.add();
     }
 }
